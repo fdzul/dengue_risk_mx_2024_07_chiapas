@@ -1,0 +1,23 @@
+---
+title: "Programa de Prevención y Control del Dengue | 2024"
+format: 
+  dashboard:
+    nav-buttons: [twitter, github, facebook]
+theme: custom.scss
+---
+
+```{r setup}
+library(sf)
+mapview::mapviewOptions(default = TRUE,
+                        basemaps.color.shuffle = FALSE)
+```
+
+# [**Hotspots de la Transmisión de Dengue**]{style="font-size:8pt"}
+
+
+# [**Hotspots del vector del Dengue**]{style="font-size:8pt"}
+
+
+
+# [**Escenarios Epidemiológicos**]{style="font-size:8pt"}
+

@@ -1990,13 +1990,40 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_07_chiapas,
 :::
 
 
-
-
 # [**Escenarios Epidemiológicos**]{style="font-size:8pt"}
 
 
 ::: panel-tabset
 
-### [**Tuxtla Gutierrez**]{style="color:#990000"}
+### [**Tapachula**]{style="color:#990000"}
 
+```{r risk_ageb_tapachula}
+# Step 1. calculate the risk ####
+risk <- denhotspots::risk_ageb(betas = denmex::eggs_betas_07_chiapas,
+                               hotspots = denmex::den_hotspots,
+                               intensity_perc = 25,
+                               locality = "Tapachula de Cordoba Y 0rdoñez",
+                               cve_edo = "07")
+
+# Step 2. map ####
+denhotspots::map_risk(risk = risk,
+                      staticmap = FALSE)
+
+```
+
+### [**Motozintla**]{style="color:#990000"}
+
+```{r risk_ageb_motozintla}
+# Step 1. calculate the risk ####
+risk <- denhotspots::risk_ageb(betas = denmex::eggs_betas_07_chiapas,
+                               hotspots = denmex::den_hotspots,
+                               intensity_perc = 25,
+                               locality = "Montozintla de Mendoza",
+                               cve_edo = "07")
+
+# Step 2. map ####
+denhotspots::map_risk(risk = risk,
+                      staticmap = FALSE)
+
+```
 :::
